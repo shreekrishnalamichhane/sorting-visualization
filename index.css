@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ROBOTO', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 60vh; */
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.barContainer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.bar {
+    background: red;
+    width: 10px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.barHeight {
+    color: #2a2a2a;
+    position: absolute;
+    top: -30px;
+    left: -7px;
+    height: 25px;
+    width: 25px;
+    background: #ffffff;
+    box-shadow: 0 0 6px 0 #929292;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort {
+    padding: 0.2rem 4rem;
+    border: 0;
+    background: #2a2a2a;
+    border-radius: 4rem;
+    color: white;
+    font-size: 1.2rem;
+    transition: 150ms ease-in-out;
+    margin-bottom: 60px;
+}
+
+.sort:hover,
+.sort:focus {
+    box-shadow: 0 3px 6px 0 #929292;
+    cursor: pointer;
+}
+
+.sort:focus {
+    outline: none;
+}
+
+.message {
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.363);
+    color: white;
+    box-shadow: 0 0 6px 0 #ff00008c;
+    border-radius: 5px;
+}
+
+.translate-left {
+    animation: translateLeft 2s forwards;
+    /* transform: translateX(50px); */
+}
+
+.translate-right {
+    animation: translateRight 2s forwards;
+    /* transform: translateX(50px); */
+}
+
+@keyframes translateLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(80px);
+    }
+}
+
+@keyframes translateRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-80px);
+    }
+}
+
+.animate {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px 0;
+    animation: circular .5s alternate;
+}
+
+@keyframes circular {
+    0% {
+        border-radius: 0;
+    }
+    100% {
+        border-radius: 50%;
+    }
+}
+
+.blue{
+    background: blue;
+}
