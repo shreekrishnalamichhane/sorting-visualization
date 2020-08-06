@@ -1,6 +1,6 @@
 ### Bubble Sort is used in this case . But ofcourse more types of sorting can be implemented like this.
 
-Demo Link:
+Demo Link: https://shreekrishnalamichhane.github.io/sorting-visualization/
 
 ### Image Preview
 ![Preview Image](snapshots/capture.png)
